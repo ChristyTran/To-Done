@@ -1,0 +1,5 @@
+<div class="view">
+  <input class="toggle" type="checkbox" (click)="toggleItemComplete(item)" [checked]="item.complete">
+  <label>{{item.title}}</label>
+  <button class="destroy" (click)="removeItem(item)"></button>
+</div>

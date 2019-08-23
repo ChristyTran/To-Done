@@ -19,7 +19,7 @@ export class TodoListItemComponent {
   constructor() {
   }
 
-  toggleTodoComplete(item: Item) {
+  toggleItemComplete(item: Item) {
     this.toggleComplete.emit(item);
   }
 

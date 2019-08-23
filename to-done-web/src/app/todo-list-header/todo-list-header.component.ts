@@ -5,7 +5,7 @@ import { Item } from '../item';
   templateUrl: './todo-list-header.component.html',
   styleUrls: ['./todo-list-header.component.css']
 })
-export class TodoListHeaderComponent implements OnInit {
+export class TodoListHeaderComponent {
   newItem: Item = new Item();
 
   @Output()

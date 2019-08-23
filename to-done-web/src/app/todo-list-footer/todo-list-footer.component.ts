@@ -6,7 +6,7 @@ import { Item } from '../item';
   templateUrl: './todo-list-footer.component.html',
   styleUrls: ['./todo-list-footer.component.css']
 })
-export class TodoListFooterComponent implements OnInit {
+export class TodoListFooterComponent {
 
   @Input()
   items: Item[];

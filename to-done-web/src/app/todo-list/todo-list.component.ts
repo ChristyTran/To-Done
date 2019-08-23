@@ -6,7 +6,7 @@ import { Item } from '../item';
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
-export class TodoListComponent implements OnInit {
+export class TodoListComponent {
 
   @Input()
   items: Item[];

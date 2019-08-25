@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Item } from '../item';
 
 @Component({
@@ -11,6 +11,14 @@ export class TodoListFooterComponent {
   @Input()
   items: Item[];
 
-  constructor() { }
+  countUncompleted(items: Item[]): number{
+    var countUncompleted = 0;
 
+    for (var i=0; i<items.length; i++){
+        if (!items[i].complete) countUncompleted++;
+    }
+
+    return countUncompleted;
+  }
+  constructor() { }
 }

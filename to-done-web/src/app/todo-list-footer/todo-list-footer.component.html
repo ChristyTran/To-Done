@@ -1,3 +1,5 @@
-<footer class="footer" *ngIf="items.length > 0">
-  <span class="todo-count"><strong>{{items.length}}</strong> {{items.length == 1 ? 'item' : 'items'}} left</span>
+<footer class="footer" *ngIf="this.countUncompleted(items)>0">
+  <span class="todo-count">
+    <strong>{{this.countUncompleted(items)}}</strong> {{this.countUncompleted(items) == 1 ? 'item' : 'items'}} left
+  </span>
 </footer>
